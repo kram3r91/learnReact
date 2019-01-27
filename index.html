@@ -17,13 +17,18 @@
                 name: 'Claudiu',
                 age: '27'
             }
-            handleClick(e){
-                console.log(e.target);
+            handleClick = (e) =>{
+                // console.log(e.target);
+                this.setState({
+                    name: 'Ciprian',
+                    age: '28'
+                });
+                console.log(this.state);
             }
-            handleMouseOver(e){
+            handleMouseOver = (e) =>{
                 console.log(e);
             }
-            handleCopy(e) {
+            handleCopy = (e) => {
                 console.log('Try being original for once!');
             }
             render () {
